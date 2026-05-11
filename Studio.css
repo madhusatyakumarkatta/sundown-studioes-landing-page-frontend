@@ -1,0 +1,160 @@
+/* Page 1 Stylings */
+nav {
+    padding: 2vw 3vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu h4 a{
+    text-decoration: none;
+    color: black;
+}
+
+#studio-page1 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Dono sides ko corner par rakhne ke liye */
+    padding: 10vw 4vw 5vw 4vw; /* Thoda side gap */
+}
+
+/* LEFT SIDE Fix (Badi heading) */
+#studio-page1 #left {
+    width: 55%;
+}
+
+#studio-page1 #left h1 {
+    font-size: 12vw; /* Thoda chhota kiya hai photo ke hisaab se */
+    line-height: 11vw;
+    letter-spacing: -0.5vw;
+    font-weight: 500;
+}
+
+/* RIGHT SIDE Fix (Para + Image) */
+#studio-page1 #right {
+    width: 35%; /* Thoda compact rakhte hain ise */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Paragraph upar, Image niche */
+    padding-top: 2vw; /* Text ko thoda niche se shuru karne ke liye */
+}
+
+#studio-page1 #right p {
+    font-size: 1.6vw; /* Thoda bada para text readability ke liye */
+    font-weight: 300;
+    line-height: 2.2vw;
+    margin-bottom: 2vw;
+    width: 100%;
+}
+
+/* Image Container Fixing */
+#studio-hero-img {
+    height: 70%; /* Image section lamba lagega */
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#studio-hero-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Image stretcy ya bekaar nahi dikhegi */
+}
+
+/* Page 2 Stylings (Section-wise) */
+#studio-page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5vw 3vw;
+    border-top: 1px solid #00000020;
+}
+.process-step {
+    padding: 6vw 0;
+    border-bottom: 2px solid #00000010;
+}
+.process-step span { color: #fe320a; font-size: 2vw; }
+.process-step h2 { font-size: 5vw; margin-top: 1vw; font-weight: 500; }
+.process-step p { font-size: 1.8vw; width: 60%; font-weight: 200; margin-top: 1vw; opacity: 0.7; }
+
+/* Page 3 Stylings */
+#studio-page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000; /* Contrast ke liye black background */
+    color: #fff;
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#vision-text h3 { font-size: 8vw; text-align: center; padding: 0 5vw;  line-height: 9vw; letter-spacing: -0.3vw; opacity: 0.6; }
+
+#studio-footer-marquee {
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding-bottom: 5vw;
+}
+.con { display: inline-block; animation: move 12s linear infinite; }
+.con h1 { display: inline-block; font-size: 12vw; }
+.gola { height: 40px; width: 40px; border-radius: 50%; background-color: #fe320a; display: inline-block; margin: 2vw; }
+
+@keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+
+
+@media (max-width: 600px) {
+
+    #studio-page1 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Dono sides ko corner par rakhne ke liye */
+    padding: 15vw 4vw 5vw 4vw; /* Thoda side gap */
+}
+
+/* LEFT SIDE Fix (Badi heading) */
+#studio-page1 #left {
+    width: 55%;
+}
+
+#studio-page1 #left h1 {
+    font-size: 8vw; /* Thoda chhota kiya hai photo ke hisaab se */
+    line-height: 11vw;
+    letter-spacing: -0.5vw;
+    font-weight: 500;
+}
+
+/* RIGHT SIDE Fix (Para + Image) */
+#studio-page1 #right {
+    width: 35%; /* Thoda compact rakhte hain ise */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Paragraph upar, Image niche */
+    padding-top: 4vw; /* Text ko thoda niche se shuru karne ke liye */
+}
+
+#studio-page1 #right p {
+    font-size: 2.4vw; /* Thoda bada para text readability ke liye */
+    font-weight: 300;
+    line-height: 2.6vw;
+    margin-bottom: 1vw;
+    width: 100%;
+}
+
+/* Image Container Fixing */
+#studio-hero-img {
+    height: 60%; /* Image section lamba lagega */
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.process-step span { color: #fe320a; font-size: 2.3vw; }
+.process-step h2 { font-size: 5vw; margin-top: 1vw; font-weight: 500; }
+.process-step p { font-size: 2vw; width: 60%; font-weight: 200; margin-top: 1vw; opacity: 0.7; }
+
+}

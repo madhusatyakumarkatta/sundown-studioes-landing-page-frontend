@@ -1,0 +1,333 @@
+
+nav{
+  padding:2.5vw 3vw;  
+}
+#nav-part2 h3:hover{
+    color: #fe320a;
+}
+#menu h4 a{
+    text-decoration: none;
+    color: black;
+}
+
+#contact-main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 8vw 3vw 2vw 3vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Part 1: Hero Text */
+#contact-top h1 {
+    font-size: 14vw;
+    line-height: 12vw;
+    letter-spacing: -0.5vw;
+    font-weight: 500;
+    z-index: 1;
+    position: relative;
+    
+}
+
+/* Part 2: Links Section (The Fixed Part) */
+#contact-links {
+    width: 100%;
+    padding: 5vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative; /* Gola ke positioning ke liye zaroori */
+}
+
+#links-left, #links-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.c-box span {
+    font-size: 1.6vw;
+    color: #fe320a;
+    display: block;
+    margin-bottom: 1.7vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.c-box a, .c-box p {
+    font-size: 2vw; /* Badi readability */
+    text-decoration: none;
+    color: #000;
+    line-height: 2.2vw;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+#social-icons a {
+    font-size: 1.8vw;
+    margin-top: 3vw;
+}
+
+#social-icons a i {
+    color: #fe320a;
+    margin-right: 0.7vw;
+}
+
+#social-icons a:hover {
+    color: #fe320a;
+    transform: translateX(10px); /* Stylish shift */
+}
+
+#magnetic-circle {
+    height: 14vw;
+    width: 14vw;
+    background-color: #fe320a;
+    border-radius: 50%;
+    position: absolute;
+    right: 8vw;
+    top: -22vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 4vw;
+    cursor: pointer;
+    transition: all ease 0.5s;
+
+}
+
+#magnetic-circle:hover {
+    transform: scale(1.4) rotate(135deg);
+}
+#footer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden; /* Gola animation bahar na jaye */
+}
+
+#footer-content {
+    height: 100vh; /* Pura space lega toh alignment sahi hogi */
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Content niche rahega */
+    padding: 0 2vw;
+    position: relative; /* Absolute ki jagah relative rakho */
+}
+#footer-top h1 {
+    font-size: 17vw; /* Size thoda sa adjust kiya */
+    line-height: 18vw;
+    text-align: center; /* Ye center karega */
+    width: 100%;
+    white-space: nowrap; /* Text ko ek hi line mein rakhega */
+    font-weight: 500;
+}
+
+#footer-bottom {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-bottom h3 {
+    font-size: 1.5vw;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.f-right {
+    display: flex;
+    gap: 2vw;
+}
+
+.f-right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2vw;
+    transition: 0.3s;
+}
+
+.f-right a:hover {
+    color: #000;
+}
+
+/* Background Animated Gola (Sundown Vibe) */
+#footer-div {
+    height: 40vw;
+    width: 100%;
+    background-color: #fe320a;
+    position: absolute;
+    top: -10%;
+    filter: blur(50px);
+    z-index: 1;
+    animation: footerAnime 5s linear infinite alternate;
+}
+
+@keyframes footerAnime {
+    from {
+        transform: translateY(10%) skewY(0);
+    }
+    to {
+        transform: translateY(-10%) skewY(10deg);
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    #contact-main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 22vw 3vw 2vw 3vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Part 1: Hero Text */
+#contact-top h1 {
+    font-size: 13vw;
+    line-height: 12vw;
+    letter-spacing: -0.5vw;
+    font-weight: 500;
+    z-index: 1;
+    position: relative;
+    
+}
+#magnetic-circle {
+    height: 14vw;
+    width: 14vw;
+    background-color: #fe320a;
+    border-radius: 50%;
+    position: absolute;
+    right: 12vw;
+    top: -45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 5vw;
+    cursor: pointer;
+    transition: all ease 0.5s;
+
+}
+
+#contact-links {
+    width: 100%;
+    padding: 12vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative; /* Gola ke positioning ke liye zaroori */
+}
+
+#links-left, #links-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.c-box span {
+    font-size: 3vw;
+    color: #fe320a;
+    display: block;
+    margin-bottom: 1.7vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.c-box a, .c-box p {
+    font-size: 3.5vw; /* Badi readability */
+    text-decoration: none;
+    color: #000;
+    line-height: 2.2vw;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+#social-icons a {
+    font-size: 2.2vw;
+    margin-top: 3vw;
+}
+
+#social-icons a i {
+    color: #fe320a;
+    margin-right: 0.7vw;
+}
+
+#social-icons a:hover {
+    color: #fe320a;
+    transform: translateX(10px); /* Stylish shift */
+}
+
+#footer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden; /* Gola animation bahar na jaye */
+}
+
+#footer-content {
+    height: 100vh; /* Pura space lega toh alignment sahi hogi */
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Content niche rahega */
+    padding: 0 2vw;
+    position: relative; /* Absolute ki jagah relative rakho */
+}
+#footer-top h1 {
+    font-size: 17vw; /* Size thoda sa adjust kiya */
+    line-height: 18vw;
+    text-align: center; /* Ye center karega */
+    width: 100%;
+    white-space: nowrap; /* Text ko ek hi line mein rakhega */
+    font-weight: 500;
+}
+
+#footer-bottom {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-bottom h3 {
+    font-size: 2.6vw;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.f-right {
+    display: flex;
+    gap: 2vw;
+}
+
+.f-right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.4vw;
+    transition: 0.3s;
+}
+
+}

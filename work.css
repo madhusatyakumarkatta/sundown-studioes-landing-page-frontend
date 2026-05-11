@@ -1,0 +1,177 @@
+nav #nav-part2 h4 a {
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #000;
+    padding: 2px 2px;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+}
+
+nav #nav-part2 h4 a:hover {
+    background-color: #000;
+    color: #fff;
+}
+#menu h4 a{
+    text-decoration: none;
+    color: black;
+}
+
+#fixed-image {
+    height: 30vw;
+    width: 24vw;
+    /* background-color: red;  Pehle red karke dekho dikh raha hai ya nahi */
+    border-radius: 15px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none; /* Shuru mein chhupa rahega */
+    background-size: cover;
+    background-position: center;
+    pointer-events: none; /* Taaki mouse iske upar na fase */
+}
+
+#work-list {
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 2vw 0;
+}
+
+.elem {
+    height: 120px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #38383864;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.elem h2 {
+    font-size: 4vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .details {
+    text-align: right;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #FE320A; /* Orange color on hover */
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+}
+
+.elem:hover .overlay {
+    top: 0;
+}
+
+.elem:hover h2 {
+    color: #fff;
+}
+
+#page2 {
+    min-height: 80vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vw 4vw;
+    border-top: 1px solid #00000020;
+}
+#page2{
+    border-top: none;
+}
+
+#page2-left h2 {
+    font-size: 5vw;
+    line-height: 5vw;
+    font-weight: 500;
+    letter-spacing: -0.2vw;
+    color: #1a1a1a;
+}
+
+#page2-right {
+    width: 35%;
+}
+
+#page2-right p {
+    font-size: 1.4vw;
+    font-weight: 300;
+    line-height: 2vw;
+    margin-bottom: 3vw;
+    color: #333;
+}
+
+#page2-right button {
+    padding: 1vw 2vw;
+    border: 1px solid #0000007e;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 1vw;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+#page2-right button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+@media (max-width: 600px) {
+
+
+#page2-left h2 {
+    text-align: center;
+    font-size: 6vw;
+    line-height: 8vw;
+    font-weight: 500;
+    letter-spacing: 0.3vw;
+    color: #1a1a1a;
+}
+
+#page2-right {
+    width: 30%;
+}
+
+#page2-right p {
+    text-align: center;
+    font-size: 2.1vw;
+    font-weight: 300;
+    line-height: 2.4vw;
+    margin-bottom: 7vw;
+    color: #333;
+}
+
+#page2-right button {
+    padding: 1vw 6vw;
+    border: 1px solid #0000007e;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 1.5vw;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+#page2-right button{
+    background-color: #000;
+    color: #fff;
+}
+
+}
